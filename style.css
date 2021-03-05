@@ -1,0 +1,138 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: seashell;
+}
+
+.head-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.head-title span:nth-child(1){
+    font-size: 2em;
+}
+
+.head-title span{
+    display: block;
+}
+
+.tuple{
+    margin: 2em 0;
+}
+
+.todo-container{
+    border: 20px solid #343434;
+    border-radius: 50px 0 20px 20px;
+}
+
+.todoslist-title{
+    font-weight: bold;
+    font-size: 2em;
+    display: inline-block;
+}
+
+.todo-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.completedLine{
+    text-decoration: line-through
+}
+
+.task-todo-text{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.circle{
+    border-radius: 100%;
+    width: 3vw;
+    height: 3vw;
+    margin: 0 .3em;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FFD700;
+    transition: .5s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: #f58b00!important;
+    transition: .2s;
+    transform: scale(1.5);
+}
+
+.edth{
+    font-size: 1.2em;
+}
+
+.head-title span:nth-child(1) button{
+    cursor: pointer!important;
+}
+
+.rotateLoop{
+    animation: rotateAnimate 2s infinite;
+}
+
+.rotate{
+    animation: rotateAnimate .5s;
+}
+
+.shakeLoop{
+    animation: shakeAnimate 2s infinite;
+}
+
+.shake{
+    animation: shakeAnimate .5s;
+}
+
+@keyframes shakeAnimate{
+    0%{
+        transform: translateX(25px);
+    }
+    25%{
+        transform: translateX(-25px);
+    }
+    50%{
+        transform: translateX(25px);
+    }
+    75%{
+        transform: translateX(-25px);
+    }
+    100%{
+        transform: translateX(25px);
+    }
+}
+
+@keyframes rotateAnimate{
+    0%{
+        transform: rotate(1deg);
+    }
+    25%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    75%{
+        transform: rotate(-1deg);
+    }
+    100%{
+        transform: rotate(1deg);
+    }
+}
