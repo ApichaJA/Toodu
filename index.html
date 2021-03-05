@@ -236,7 +236,7 @@
                 <header class="modal-card-head">
                     <p class="modal-card-title my-1">Edit Task</p>
                 </header>
-                <section class="modal-card-body">
+                <section class="modal-card-body"style="height: 20vw" >
                     <div class="columns">
                         <div class="column is-8">
                             <input class="input py-4" :class="{'is-danger' : nullInput}"
@@ -413,83 +413,8 @@
                 },
 
                // ToDoLists: [],
-                ToDoLists: [
-                    {
-                        id: 1,
-                        name: "ToDo List",
-                        filters: {
-                            filterHide: false,
-                            filterflagged: false,
-                            sortTask: "1"
-                        },
-                    },
-                    {
-                        id: 2,
-                        name: "Don's want To Do D:",
-                        filters: {
-                            filterHide: false,
-                            filterflagged: false,
-                            sortTask: "2"
-                        },
-                    },
-                ],
-                myTodoList: [
-                    {
-                        id: 1,
-                        name: "Cook Dinner",
-                        isComplete: false,
-                        flagged: false,
-                        listId: 1,
-                        selectColor: "#47b881",
-                        duedate: "",
-                    },
-                    {
-                        id: 2,
-                        name: "Clean Room",
-                        isComplete: false,
-                        flagged: false,
-                        listId: 1,
-                        selectColor: "#343434",
-                        duedate: "",
-                    },
-                    {
-                        id: 3,
-                        name: "Walk Dog",
-                        isComplete: false,
-                        flagged: false,
-                        listId: 1,
-                        selectColor: "#343434",
-                        duedate: "2021-03-05",
-                    },
-                    {
-                        id: 4,
-                        name: "Go shopping",
-                        isComplete: false,
-                        flagged: false,
-                        listId: 2,
-                        selectColor: "#343434",
-                        duedate: "",
-                    },
-                    {
-                        id: 5,
-                        name: "Doing homework",
-                        isComplete: false,
-                        flagged: false,
-                        listId: 2,
-                        selectColor: "#343434",
-                        duedate: "",
-                    },
-                    {
-                        id: 6,
-                        name: "Work too hard",
-                        isComplete: false,
-                        flagged: true,
-                        listId: 2,
-                        selectColor: "#343434",
-                        duedate: "",
-                    },
-                ],
-
+                ToDoLists: [],
+                myTodoList: [],
             },
             methods: {
                 addNewTask() {
